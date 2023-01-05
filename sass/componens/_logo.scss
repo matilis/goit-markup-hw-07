@@ -1,0 +1,17 @@
+.logo {
+  text-decoration: none;
+  font-family: $fontLogo;
+  font-size: 26px;
+  line-height: 1.19;
+  margin-right: 93px;
+  padding: 0;
+  display: flex;
+
+  &__web {
+    color: $accentColor;
+  }
+
+  &__studio {
+    color: $charlieColor;
+  }
+}
