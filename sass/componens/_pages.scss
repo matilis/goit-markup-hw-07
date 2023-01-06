@@ -35,3 +35,89 @@
     margin-bottom: 30px;
   }
 }
+
+.page-footer {
+  background-color: $secondaryBgColor;
+  padding: 60px 0;
+  &__box {
+    display: flex;
+    align-items: baseline;
+  }
+  &__contact {
+    font-style: normal;
+    margin-top: 20px;
+  }
+  &__item {
+    margin-bottom: 9px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  &__map {
+    text-decoration: none;
+    line-height: 1.71;
+    color: $primaryBgColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      color: $accentColor;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    line-height: 1.71;
+    color: $deltaColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      color: $accentColor;
+    }
+  }
+  &__social-media {
+    margin-left: 70px;
+    margin-right: auto;
+  }
+  &__title {
+    color: $primaryBgColor;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  &__border {
+    display: flex;
+    gap: 12px;
+  }
+  &__mail-input {
+    width: 358px;
+    height: 50px;
+    color: $primaryBgColor;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    padding-left: 16px;
+    background-color: $secondaryBgColor;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $accentColor;
+      border-color: $accentColor;
+      outline: none;
+    }
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:hover::placeholder {
+      color: $primaryBgColor;
+    }
+    &:focus::placeholder {
+      color: $primaryBgColor;
+    }
+  }
+}

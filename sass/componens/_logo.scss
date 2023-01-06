@@ -14,4 +14,10 @@
   &__studio {
     color: $charlieColor;
   }
+  &__studio--footer {
+    font-family: $fontLogo;
+    font-size: 26px;
+    line-height: 1.19;
+    color: $primaryBgColor;
+  }
 }

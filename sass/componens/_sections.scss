@@ -1,0 +1,126 @@
+.section {
+  padding: 94px 0;
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    &--hider {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  &__photo {
+    position: relative;
+  }
+  &__subtitle {
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $primaryBgColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__box {
+    border: 1px solid currentColor;
+    color: $customersBrColor;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+      outline: none;
+    }
+  }
+  &__customers {
+    fill: currentColor;
+  }
+}
+
+.descrition {
+  padding-bottom: 0;
+  &__icon {
+    background-color: $teamColor;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+  &__topic {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  &__text {
+    line-height: 1.71;
+    color: $bravoColor;
+  }
+}
+
+.team {
+  background-color: $teamColor;
+  display: center;
+  &__item {
+    background-color: $primaryBgColor;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__name {
+    padding: 30px 0;
+  }
+  &__fullname {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  &__jobs {
+    font-size: 16px;
+    line-height: 1.18;
+    color: $bravoColor;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
