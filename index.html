@@ -460,37 +460,39 @@
       </div>
     </footer>
 
+    <!-- modal -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form class="modal-form">
-          <fieldset class="form">
-            <legend class="form__title">Zostaw swoje dane w formularzu poniżej</legend>
-            <label class="form-label">
+        <form class="modal__form">
+          <fieldset class="modal__fieldset">
+            <legend class="modal__title">Zostaw swoje dane w formularzu poniżej</legend>
+            <label class="modal__label">
               Imię
-              <input class="form-label__input" type="text" name="name" required />
-              <svg class="form-label__icon" id="icon-person-black-18dp-1" width="18" height="18">
+              <input class="modal__input" type="text" name="name" required />
+              <svg class="modal__icon" id="icon-person-black-18dp-1" width="18" height="18">
                 <use href="images/icons.svg#icon-person-black-18dp-1"></use>
               </svg>
             </label>
-            <label class="form-label"
+            <label class="modal__label"
               >Telefon
-              <input class="form-label__input" type="tel" name="telefon" required />
-              <svg class="form-label__icon" id="icon-phone-black-18dp-1" width="18" height="18">
+              <input class="modal__input" type="tel" name="telefon" required />
+              <svg class="modal__icon" id="icon-phone-black-18dp-1" width="18" height="18">
                 <use href="images/icons.svg#icon-phone-black-18dp-1"></use>
               </svg>
             </label>
-            <label class="form-label"
+            <label class="modal__label"
               >Email
-              <input class="form-label__input" type="email" name="email" required />
-              <svg class="form-label__icon" id="icon-email-black-18dp-1" width="18" height="18">
+              <input class="modal__input" type="email" name="email" required />
+              <svg class="modal__icon" id="icon-email-black-18dp-1" width="18" height="18">
                 <use href="images/icons.svg#icon-email-black-18dp-1"></use>
               </svg>
             </label>
 
-            <label class="form-label"
+            <label class="modal__label"
               >Komentarz
               <textarea
-                class="form-label__text"
+                class="modal__text"
                 name="Komentarz"
                 placeholder="Wprowadź tekst"
               ></textarea>
@@ -498,25 +500,25 @@
           </fieldset>
 
           <div class="terms">
-            <label class="terms-label">
-              <input class="terms-label__input" type="checkbox" name="terms" />
-              <svg class="terms-label__checked" width="16" height="15">
+            <label class="terms__label">
+              <input class="terms__input" type="checkbox" name="terms" />
+              <svg class="terms__checked" width="16" height="15">
                 <use href="images/icons.svg#icon-icon-check"></use>
               </svg>
-              <svg class="terms-label__box" width="16" height="15">
+              <svg class="terms__box" width="16" height="15">
                 <use href="images/icons.svg#icon-Vector-1"></use>
               </svg>
             </label>
-            <p class="terms-text">
-              Oświadczam iż akceptuję <a class="terms-text__links" href="#terms">Regulamin</a> i
-              <a class="terms-text__links" href="#politics">Politykę Prywatności</a>.
+            <p class="terms__text">
+              Oświadczam iż akceptuję <a class="terms__links" href="#terms">Regulamin</a> i
+              <a class="terms__links" href="#politics">Politykę Prywatności</a>.
             </p>
           </div>
-          <div class="form-button-send">
-            <button class="button__main" type="submit">Wyślij</button>
+          <div class="btn-send-form">
+            <button class="btn-primary" type="submit">Wyślij</button>
           </div>
         </form>
-        <button class="button-close" type="button" data-modal-close>
+        <button class="btn-close" type="button" data-modal-close>
           <svg width="18" height="18">
             <use href="images/icons.svg#icon-close-black-18dp-2-1"></use>
           </svg>

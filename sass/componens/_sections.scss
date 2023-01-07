@@ -63,6 +63,12 @@
   &__customers {
     fill: currentColor;
   }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+  }
 }
 
 .descrition {
